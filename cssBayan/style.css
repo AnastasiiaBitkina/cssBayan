@@ -5,9 +5,18 @@
     font-style: normal;
     font-weight: 400;
     src: local(''),
-         url('../../assets/fontsrubik-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../../assets/fontsrubik-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('../cssBayan/assets/fonts/rubik-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../cssBayan/assets/fonts/rubik-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+/* rubik-italic - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+         url('../cssBayan/assets/fonts/rubik-v23-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../cssBayan/assets/fonts/rubik-v23-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
 /* wrapper styles start*/
 .wrapper{
     margin-left: auto;
@@ -44,9 +53,11 @@
 }
 .bayan_label{
     display: block;
-    background-color:brown;
-    color: beige;
+    background-color: beige;
+    color: black;
     font-weight: normal;
+    font-family: 'Rubik';
+    font-style: italic;
     cursor: pointer;
     padding: 1.2em;
 }
@@ -65,8 +76,7 @@
     overflow: hidden;
     padding: 0;
     width: 1px;
-    background-color: brown;
-    color: beige;
+    background-color: beige;
 }
 .bayan_switch:checked ~ .content{
     position: static;
