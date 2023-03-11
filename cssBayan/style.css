@@ -1,0 +1,76 @@
+/*add fonts*/
+/* rubik-regular - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../../assets/fontsrubik-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../../assets/fontsrubik-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/*accordion menu styles start*/
+.bayan{
+    margin: 0;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    list-style: none;
+}
+.bayan_item{
+    border-bottom: 1px solid;
+}
+.bayan_item:last-of-type{
+    border-bottom: none;
+}
+.bayan_label{
+    display: block;
+    background-color:brown;
+    color: beige;
+    font-weight: normal;
+    cursor: pointer;
+    padding: 1.2em;
+}
+.bayan_switch:checked ~ .bayan_label{
+    background-color: gray;
+}
+.bayan_switch{
+    position: absolute;
+    display: none;
+}
+.content{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    width: 1px;
+    background-color: brown;
+    color: beige;
+}
+.bayan_switch:checked ~ .content{
+    position: static;
+    overflow: visible;
+    clip: auto;
+    margin: auto;
+    padding: 1.2rem;
+    width: auto;
+    height: auto;
+    -webkit-animation:fadeIn ease-in 0.5s;
+    -moz-animation:fadeIn ease-in 0.5s;
+    animation:fadeIn ease-in 0.5s;
+}
+@keyframes fadeIn{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-webkit-keyframes fadeIn{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-moz-keyframes fadeIn{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/*accordion menu styles end*/
