@@ -21,7 +21,7 @@
 .wrapper{
     margin-left: auto;
     margin-right: auto;
-    width: 960px;
+    width: 1200px;
     display: block;
     position: relative;
 }
@@ -30,6 +30,7 @@
 .header{
     font-family: 'Rubik';
     font-style: normal;
+    font-size: 36px;
 }
 /* header styles end*/
 /*images styles start*/
@@ -71,6 +72,7 @@
     font-weight: normal;
     font-family: 'Rubik';
     font-style: italic;
+    font-size: 24px;
 }
 
 /*accordion menu styles start*/
@@ -99,7 +101,7 @@
     background-color: gray;
 }
 .bayan_switch{
-    position: absolute;
+    position: relative;
     display: none;
 }
 .content{
