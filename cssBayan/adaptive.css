@@ -3,6 +3,7 @@
         width: 90% px;
     }
 }
+/*tablet version styles start*/
 @media only screen and (max-width: 820px){
     .wrapper{
         width: 100%;
@@ -17,6 +18,8 @@
         font-size: 1.5em;
     }
 }
+/*tablet version styles end*/
+/*mobile version styles start*/
 @media only screen and (max-width: 320px){
     .wrapper{
         width: 100%;
@@ -31,6 +34,8 @@
         font-size: 2em;
     }
 }
+/*mobile version styles end*/
+/*desktop version styles start*/
 @media only screen and (min-width: 1200px) {
     .bayan_switch:hover ~ .bayan_label{
         background-color: gray;
@@ -49,3 +54,4 @@
         animation:fadeIn ease-in 0.5s;
     }
 }
+/*desktop version styles end*/
