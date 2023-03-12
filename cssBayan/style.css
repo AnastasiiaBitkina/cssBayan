@@ -38,6 +38,26 @@
     width: 50%;
 }
 /*images styles end*/
+/*label styles stert*/
+.label_item{
+    display: flex;
+}
+.plus_pic{
+    margin-left: auto;
+    width: 24px;
+    height: 24px;
+}
+.minus_pic{
+   width: 24px;
+   height: 24px;
+}
+/*label styles end*/
+.text{
+    font-weight: normal;
+    font-family: 'Rubik';
+    font-style: italic;
+}
+
 /*accordion menu styles start*/
 .bayan{
     margin: 0;
@@ -55,11 +75,9 @@
     display: block;
     background-color: beige;
     color: black;
-    font-weight: normal;
-    font-family: 'Rubik';
-    font-style: italic;
     cursor: pointer;
     padding: 1.2em;
+    border-radius: 20px;
 }
 .bayan_switch:checked ~ .bayan_label{
     background-color: gray;
@@ -77,6 +95,7 @@
     padding: 0;
     width: 1px;
     background-color: beige;
+    border-radius: 20px;
 }
 .bayan_switch:checked ~ .content{
     position: static;
