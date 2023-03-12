@@ -1,0 +1,57 @@
+@media only screen and (max-width: 1920px) {
+    .wrapper{
+        width: 90% px;
+    }
+}
+/*tablet version styles start*/
+@media only screen and (max-width: 820px){
+    .wrapper{
+        width: 100%;
+    }
+    .pic{
+        width: 80%;
+    }
+    .header {
+        font-size: 3em;
+    }
+    .text{
+        font-size: 1.5em;
+    }
+}
+/*tablet version styles end*/
+/*mobile version styles start*/
+@media only screen and (max-width: 320px){
+    .wrapper{
+        width: 100%;
+    }
+    .pic{
+        width: 90%;
+    }
+    .header{
+        width: 4.5em;
+    }
+    .text{
+        font-size: 2em;
+    }
+}
+/*mobile version styles end*/
+/*desktop version styles start*/
+@media only screen and (min-width: 1200px) {
+    .bayan_switch:hover ~ .bayan_label{
+        background-color: gray;
+        cursor: pointer;
+    }
+    .bayan_switch:hover ~ .content{
+        position: static;
+        overflow: visible;
+        clip: auto;
+        margin: auto;
+        padding: 1.2rem;
+        width: auto;
+        height: auto;
+        -webkit-animation:fadeIn ease-in 0.5s;
+        -moz-animation:fadeIn ease-in 0.5s;
+        animation:fadeIn ease-in 0.5s;
+    }
+}
+/*desktop version styles end*/
