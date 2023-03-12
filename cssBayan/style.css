@@ -22,6 +22,8 @@
     margin-left: auto;
     margin-right: auto;
     width: 960px;
+    display: block;
+    position: relative;
 }
 /*wrapper styles end*/
 /* header styles start*/
@@ -42,10 +44,23 @@
 .label_item{
     display: flex;
 }
-.plus_pic{
+.change_icons{
     margin-left: auto;
+    display: flex;
+}
+.change_icon_plus{
+   display: none;
+}
+.wrapper:hover .change_icon_plus{
+    display: block;
+}
+.plus_pic{
     width: 24px;
     height: 24px;
+    display: block;
+}
+.change_icon_minus{
+    display: none;
 }
 .minus_pic{
    width: 24px;
@@ -78,6 +93,7 @@
     cursor: pointer;
     padding: 1.2em;
     border-radius: 20px;
+    position: relative;
 }
 .bayan_switch:checked ~ .bayan_label{
     background-color: gray;
